@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.5.0",
+    "turbo": "^2.4.4"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"]
+  }
+}
